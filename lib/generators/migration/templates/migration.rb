@@ -1,0 +1,11 @@
+migration do
+  def up<% attributes.each do |attribute| %>
+    <%= migration_action %>_column :<%= table_name %>, :<%= attribute.name %><% if migration_action == 'add' %>, :<%= attribute.type %><% end -%>
+  <%- end %>
+  end
+
+  def down<% attributes.reverse.each do |attribute| %>
+    <%= migration_action == 'add' ? 'remove' : 'add' %>_column :<%= table_name %>, :<%= attribute.name %><% if migration_action == 'remove' %>, :<%= attribute.type %><% end -%>
+  <%- end %>
+  end
+end

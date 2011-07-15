@@ -48,9 +48,9 @@ into:
 ==== Rails 2.3
 
   # as plugin:
-  rails plugin install git://github.com/janlelis/slim_migrations.git -r 2.3
-  # or in Gemfile:
-  gem 'slim_migrations', '~> 2.3.0'
+  script/plugin install git://github.com/janlelis/slim_migrations.git -r 2.3
+  # or in config/environment.rb
+  config.gem 'slim_migrations', :version => '~> 2.3.0'
 
 === Credits
 
