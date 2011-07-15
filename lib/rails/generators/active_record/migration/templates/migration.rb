@@ -1,4 +1,11 @@
 migration do
+<%- if migration_action == 'add' -%>
+  def change
+<% attributes.each do |attribute| -%>
+    add_column :<%= table_name %>, :<%= attribute.name %>, :<%= attribute.type %>
+<%- end -%>
+  end
+<%- else -%>
   def up
 <% attributes.each do |attribute| -%>
   <%- if migration_action -%>
@@ -14,4 +21,5 @@ migration do
   <%- end -%>
 <%- end -%>
   end
+<%- end -%>
 end

@@ -11,5 +11,5 @@ Gem::Specification.new do |s|
   s.homepage = 'https://github.com/janlelis/slim_migrations'
   s.files = Dir['lib/**/*'] + ['MIT-LICENSE', 'Rakefile', 'README.rdoc']
   s.version = SlimMigrations::VERSION
-  s.add_dependency 'rails', '~> 3.0.0'
+  s.add_dependency 'rails', '~> 3.1.0.rc4'
 end
