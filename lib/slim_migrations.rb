@@ -1,3 +1,5 @@
+require 'slim_migrations/version'
+
 module SlimMigrations
   class Railtie < Rails::Railtie
     rake_tasks do
