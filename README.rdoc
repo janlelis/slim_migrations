@@ -34,27 +34,25 @@ into:
 ==== Rails 3.1
 
   # as plugin:
-  rails plugin install https://github.com/janlelis/slim_migrations.git, :branch => 3.1
+  rails plugin install git://github.com/janlelis/slim_migrations.git -r 3.1
   # or in Gemfile:
   gem 'slim_migrations', '~> 3.1.0'
 
 ==== Rails 3.0
 
   # as plugin:
-  rails plugin install https://github.com/janlelis/slim_migrations.git, :branch => 3.0
+  rails plugin install git://github.com/janlelis/slim_migrations.git -r 3.0
   # or in Gemfile:
   gem 'slim_migrations', '~> 3.0.0'
 
 ==== Rails 2.3
 
   # as plugin:
-  rails plugin install https://github.com/janlelis/slim_migrations.git, :branch => 2.3
+  rails plugin install git://github.com/janlelis/slim_migrations.git -r 2.3
   # or in Gemfile:
   gem 'slim_migrations', '~> 2.3.0'
 
 === Credits
-
-This project rocks and uses MIT-LICENSE.
 
 Blog post: http://rbjl.net
 
