@@ -1,0 +1,61 @@
+=== SlimMigrations
+
+Turns
+
+  class AddWebsiteToUser < ActiveRecord::Migration
+    def self.up
+      add_column :users, :website, :string
+    end
+
+    def self.down
+      remove_column :users, :website
+    end
+  end
+
+into:
+
+  migration do
+    def up
+      add_column :users, :website, :string
+    end
+
+    def down
+      remove_column :users, :website
+    end
+  end
+
+=== Extras
+
+* Modifies the rails generator to use the slim syntax
+* Helper task for converting existing migrations: rake slim_migrations:update_syntax
+
+=== Install
+
+==== Rails 3.1
+
+  # as plugin:
+  rails plugin install https://github.com/janlelis/slim_migrations.git, :branch => 3.1
+  # or in Gemfile:
+  gem 'slim_migrations', '~> 3.1.0'
+
+==== Rails 3.0
+
+  # as plugin:
+  rails plugin install https://github.com/janlelis/slim_migrations.git, :branch => 3.0
+  # or in Gemfile:
+  gem 'slim_migrations', '~> 3.0.0'
+
+==== Rails 2.3
+
+  # as plugin:
+  rails plugin install https://github.com/janlelis/slim_migrations.git, :branch => 2.3
+  # or in Gemfile:
+  gem 'slim_migrations', '~> 2.3.0'
+
+=== Credits
+
+This project rocks and uses MIT-LICENSE.
+
+Blog post: http://rbjl.net
+
+J-_-L
