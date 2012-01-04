@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    slim_migrations (3.1.0)
+    slim_migrations (3.2.0)
       rails (~> 3.2.0.rc1)
 
 GEM
