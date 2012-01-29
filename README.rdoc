@@ -12,7 +12,7 @@ Turns
     end
   end
 
-into:
+into
 
   migration do
     def up
@@ -31,29 +31,36 @@ into:
 
 === Install
 
+==== Rails 3.2
+
+  # in your Gemfile
+  gem 'slim_migrations', '~> 3.2.1'
+
 ==== Rails 3.1
 
   # as plugin:
   rails plugin install git://github.com/janlelis/slim_migrations.git -r 3.1
-  # or in Gemfile:
-  gem 'slim_migrations', '~> 3.1.0'
+  # or in your Gemfile:
+  gem 'slim_migrations', '~> 3.1.1'
 
 ==== Rails 3.0
 
   # as plugin:
   rails plugin install git://github.com/janlelis/slim_migrations.git -r 3.0
-  # or in Gemfile:
-  gem 'slim_migrations', '~> 3.0.0'
+  # or in your Gemfile:
+  gem 'slim_migrations', '~> 3.0.1'
 
 ==== Rails 2.3
 
   # as plugin:
   script/plugin install git://github.com/janlelis/slim_migrations.git -r 2.3
-  # or in config/environment.rb
-  config.gem 'slim_migrations', :version => '~> 2.3.0'
+  # or in your config/environment.rb
+  config.gem 'slim_migrations', :version => '~> 2.3.1'
 
 === Credits
 
-Blog post: http://rbjl.net
+Blog post: http://rbjl.net/53-three-little-tips-for-slimmer-rails-migrations
 
-J-_-L
+Thanks to contributions from: Manuel Meurer
+
+MIT-LICENSE, J-_-L
