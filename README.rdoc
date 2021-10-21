@@ -1,3 +1,5 @@
+<b>Please note:</b> This project is archived and does not work with recent versions of Rails anymore.
+
 === SlimMigrations
 
 Turns
@@ -59,7 +61,7 @@ into
 
 === Credits
 
-Blog post: http://rbjl.net/53-three-little-tips-for-slimmer-rails-migrations
+Blog post: https://rbjl.janlelis.com/53-three-little-tips-for-slimmer-rails-migrations
 
 Thanks to contributions from: Manuel Meurer
 
